@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="634f2a6b6e354fc2adc5fdf26ca1bd6d" Name="Diagram1">
+      <Diagram DiagramId="6081c4e466784303ae96d4a874314ea5" Name="Diagram1">
         <EntityTypeShape EntityType="Bloghi304DBModel.Etiketler" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Bloghi304DBModel.Kategoriler" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Bloghi304DBModel.MakaleEtiketleri" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />

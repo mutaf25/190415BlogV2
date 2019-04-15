@@ -17,7 +17,8 @@ namespace _190410_BlogV1.Areas.AdminPaneli
             context.MapRoute(
                 "AdminPaneli_default",
                 "AdminPaneli/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new {controller = "Default", action="Index" ,id = UrlParameter.Optional },
+                namespaces: new[] {"_190410_BlogV1.Controllers"}
             );
         }
     }

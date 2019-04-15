@@ -33,15 +33,15 @@
             <PropertyRef Name="MakalelerID" />
           </Key>
           <Property Name="MakalelerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Baslik" Type="nvarchar" MaxLength="50" />
+          <Property Name="Baslık" Type="nvarchar" MaxLength="50" />
           <Property Name="icerik" Type="nvarchar(max)" />
-          <Property Name="EklenmeTarihi" Type="date" />
+          <Property Name="EklemeTarihi" Type="date" />
           <Property Name="GoruntulenmeSayisi" Type="int" />
           <Property Name="GuncellenmeTarihi" Type="date" />
-          <Property Name="BegenmeSayisi" Type="int" />
+          <Property Name="BegenSayisi" Type="int" />
           <Property Name="YazarID" Type="int" />
           <Property Name="KategoriID" Type="int" />
-          <Property Name="Aktifmi" Type="bit" />
+          <Property Name="AktifMi" Type="bit" />
         </EntityType>
         <EntityType Name="Resimler">
           <Key>
@@ -49,7 +49,7 @@
           </Key>
           <Property Name="ResimlerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="KucukBoyut" Type="nvarchar(max)" />
-          <Property Name="OrtaBoyut" Type="nvarchar(max)" />
+          <Property Name="ortaBoyut" Type="nvarchar(max)" />
           <Property Name="BuyukBoyut" Type="nvarchar(max)" />
           <Property Name="Video" Type="nvarchar(max)" />
           <Property Name="MakaleID" Type="int" />
@@ -66,14 +66,14 @@
           <Property Name="MailAdres" Type="nvarchar" MaxLength="50" />
           <Property Name="DogumTarihi" Type="date" />
           <Property Name="KayitTarihi" Type="date" />
-          <Property Name="Yazarmi" Type="bit" />
+          <Property Name="YazarMi" Type="bit" />
           <Property Name="YetkiID" Type="int" />
         </EntityType>
         <EntityType Name="Yetkiler">
           <Key>
-            <PropertyRef Name="YetkilerID" />
+            <PropertyRef Name="yetkilerID" />
           </Key>
-          <Property Name="YetkilerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="yetkilerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="YetkiAdi" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Yorumlar">
@@ -87,7 +87,7 @@
           <Property Name="UyeID" Type="int" />
           <Property Name="BegenmeSayisi" Type="int" />
           <Property Name="MakaleID" Type="int" />
-          <Property Name="Aktifmi" Type="bit" />
+          <Property Name="AktifMi" Type="bit" />
           <Property Name="GuncellemeTarihi" Type="date" />
         </EntityType>
         <EntityContainer Name="Bloghi304DBModelStoreContainer">
@@ -133,15 +133,15 @@
             <PropertyRef Name="MakalelerID" />
           </Key>
           <Property Name="MakalelerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Baslik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Baslık" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="icerik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="EklenmeTarihi" Type="DateTime" Precision="0" />
+          <Property Name="EklemeTarihi" Type="DateTime" Precision="0" />
           <Property Name="GoruntulenmeSayisi" Type="Int32" />
           <Property Name="GuncellenmeTarihi" Type="DateTime" Precision="0" />
-          <Property Name="BegenmeSayisi" Type="Int32" />
+          <Property Name="BegenSayisi" Type="Int32" />
           <Property Name="YazarID" Type="Int32" />
           <Property Name="KategoriID" Type="Int32" />
-          <Property Name="Aktifmi" Type="Boolean" />
+          <Property Name="AktifMi" Type="Boolean" />
         </EntityType>
         <EntityType Name="Resimler">
           <Key>
@@ -149,7 +149,7 @@
           </Key>
           <Property Name="ResimlerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="KucukBoyut" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="OrtaBoyut" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ortaBoyut" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="BuyukBoyut" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Video" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="MakaleID" Type="Int32" />
@@ -166,14 +166,14 @@
           <Property Name="MailAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DogumTarihi" Type="DateTime" Precision="0" />
           <Property Name="KayitTarihi" Type="DateTime" Precision="0" />
-          <Property Name="Yazarmi" Type="Boolean" />
+          <Property Name="YazarMi" Type="Boolean" />
           <Property Name="YetkiID" Type="Int32" />
         </EntityType>
         <EntityType Name="Yetkiler">
           <Key>
-            <PropertyRef Name="YetkilerID" />
+            <PropertyRef Name="yetkilerID" />
           </Key>
-          <Property Name="YetkilerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="yetkilerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="YetkiAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Yorumlar">
@@ -187,10 +187,10 @@
           <Property Name="UyeID" Type="Int32" />
           <Property Name="BegenmeSayisi" Type="Int32" />
           <Property Name="MakaleID" Type="Int32" />
-          <Property Name="Aktifmi" Type="Boolean" />
+          <Property Name="AktifMi" Type="Boolean" />
           <Property Name="GuncellemeTarihi" Type="DateTime" Precision="0" />
         </EntityType>
-        <EntityContainer Name="Bloghi304DBEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Bloghi304DBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Etiketler" EntityType="Self.Etiketler" />
           <EntitySet Name="Kategoriler" EntityType="Self.Kategoriler" />
           <EntitySet Name="MakaleEtiketleri" EntityType="Self.MakaleEtiketleri" />
@@ -205,7 +205,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Bloghi304DBModelStoreContainer" CdmEntityContainer="Bloghi304DBEntities1">
+        <EntityContainerMapping StorageEntityContainer="Bloghi304DBModelStoreContainer" CdmEntityContainer="Bloghi304DBEntities">
           <EntitySetMapping Name="Etiketler">
             <EntityTypeMapping TypeName="Bloghi304DBModel.Etiketler">
               <MappingFragment StoreEntitySet="Etiketler">
@@ -235,15 +235,15 @@
             <EntityTypeMapping TypeName="Bloghi304DBModel.Makaleler">
               <MappingFragment StoreEntitySet="Makaleler">
                 <ScalarProperty Name="MakalelerID" ColumnName="MakalelerID" />
-                <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+                <ScalarProperty Name="Baslık" ColumnName="Baslık" />
                 <ScalarProperty Name="icerik" ColumnName="icerik" />
-                <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+                <ScalarProperty Name="EklemeTarihi" ColumnName="EklemeTarihi" />
                 <ScalarProperty Name="GoruntulenmeSayisi" ColumnName="GoruntulenmeSayisi" />
                 <ScalarProperty Name="GuncellenmeTarihi" ColumnName="GuncellenmeTarihi" />
-                <ScalarProperty Name="BegenmeSayisi" ColumnName="BegenmeSayisi" />
+                <ScalarProperty Name="BegenSayisi" ColumnName="BegenSayisi" />
                 <ScalarProperty Name="YazarID" ColumnName="YazarID" />
                 <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
-                <ScalarProperty Name="Aktifmi" ColumnName="Aktifmi" />
+                <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -252,7 +252,7 @@
               <MappingFragment StoreEntitySet="Resimler">
                 <ScalarProperty Name="ResimlerID" ColumnName="ResimlerID" />
                 <ScalarProperty Name="KucukBoyut" ColumnName="KucukBoyut" />
-                <ScalarProperty Name="OrtaBoyut" ColumnName="OrtaBoyut" />
+                <ScalarProperty Name="ortaBoyut" ColumnName="ortaBoyut" />
                 <ScalarProperty Name="BuyukBoyut" ColumnName="BuyukBoyut" />
                 <ScalarProperty Name="Video" ColumnName="Video" />
                 <ScalarProperty Name="MakaleID" ColumnName="MakaleID" />
@@ -270,7 +270,7 @@
                 <ScalarProperty Name="MailAdres" ColumnName="MailAdres" />
                 <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
                 <ScalarProperty Name="KayitTarihi" ColumnName="KayitTarihi" />
-                <ScalarProperty Name="Yazarmi" ColumnName="Yazarmi" />
+                <ScalarProperty Name="YazarMi" ColumnName="YazarMi" />
                 <ScalarProperty Name="YetkiID" ColumnName="YetkiID" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -278,7 +278,7 @@
           <EntitySetMapping Name="Yetkiler">
             <EntityTypeMapping TypeName="Bloghi304DBModel.Yetkiler">
               <MappingFragment StoreEntitySet="Yetkiler">
-                <ScalarProperty Name="YetkilerID" ColumnName="YetkilerID" />
+                <ScalarProperty Name="yetkilerID" ColumnName="yetkilerID" />
                 <ScalarProperty Name="YetkiAdi" ColumnName="YetkiAdi" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -293,7 +293,7 @@
                 <ScalarProperty Name="UyeID" ColumnName="UyeID" />
                 <ScalarProperty Name="BegenmeSayisi" ColumnName="BegenmeSayisi" />
                 <ScalarProperty Name="MakaleID" ColumnName="MakaleID" />
-                <ScalarProperty Name="Aktifmi" ColumnName="Aktifmi" />
+                <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
                 <ScalarProperty Name="GuncellemeTarihi" ColumnName="GuncellemeTarihi" />
               </MappingFragment>
             </EntityTypeMapping>

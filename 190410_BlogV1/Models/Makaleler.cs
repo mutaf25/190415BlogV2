@@ -15,14 +15,14 @@ namespace _190410_BlogV1.Models
     public partial class Makaleler
     {
         public int MakalelerID { get; set; }
-        public string Baslik { get; set; }
+        public string Baslık { get; set; }
         public string icerik { get; set; }
-        public Nullable<System.DateTime> EklenmeTarihi { get; set; }
+        public Nullable<System.DateTime> EklemeTarihi { get; set; }
         public Nullable<int> GoruntulenmeSayisi { get; set; }
         public Nullable<System.DateTime> GuncellenmeTarihi { get; set; }
-        public Nullable<int> BegenmeSayisi { get; set; }
+        public Nullable<int> BegenSayisi { get; set; }
         public Nullable<int> YazarID { get; set; }
         public Nullable<int> KategoriID { get; set; }
-        public Nullable<bool> Aktifmi { get; set; }
+        public Nullable<bool> AktifMi { get; set; }
     }
 }

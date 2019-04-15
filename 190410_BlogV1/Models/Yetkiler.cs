@@ -14,7 +14,7 @@ namespace _190410_BlogV1.Models
     
     public partial class Yetkiler
     {
-        public int YetkilerID { get; set; }
+        public int yetkilerID { get; set; }
         public string YetkiAdi { get; set; }
     }
 }

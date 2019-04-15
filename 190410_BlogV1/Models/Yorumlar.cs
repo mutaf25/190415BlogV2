@@ -21,7 +21,7 @@ namespace _190410_BlogV1.Models
         public Nullable<int> UyeID { get; set; }
         public Nullable<int> BegenmeSayisi { get; set; }
         public Nullable<int> MakaleID { get; set; }
-        public Nullable<bool> Aktifmi { get; set; }
+        public Nullable<bool> AktifMi { get; set; }
         public Nullable<System.DateTime> GuncellemeTarihi { get; set; }
     }
 }

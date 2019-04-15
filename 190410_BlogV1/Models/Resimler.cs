@@ -16,7 +16,7 @@ namespace _190410_BlogV1.Models
     {
         public int ResimlerID { get; set; }
         public string KucukBoyut { get; set; }
-        public string OrtaBoyut { get; set; }
+        public string ortaBoyut { get; set; }
         public string BuyukBoyut { get; set; }
         public string Video { get; set; }
         public Nullable<int> MakaleID { get; set; }

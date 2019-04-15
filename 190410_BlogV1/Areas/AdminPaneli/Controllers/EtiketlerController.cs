@@ -8,7 +8,7 @@ namespace _190410_BlogV1.Areas.AdminPaneli.Controllers
 {
     public class EtiketlerController : Controller
     {
-        Models.Bloghi304DBEntities1 db = new Models.Bloghi304DBEntities1();
+        Models.Bloghi304DBEntities db = new Models.Bloghi304DBEntities();
         // GET: AdminPaneli/Etiketler
         public ActionResult EtiketListesiIndex()
         {

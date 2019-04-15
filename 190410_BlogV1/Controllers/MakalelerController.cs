@@ -9,7 +9,7 @@ namespace _190410_BlogV1.Controllers
     public class MakalelerController : Controller
     {
         //*****************************************************************
-        Models.Bloghi304DBEntities1 db = new Models.Bloghi304DBEntities1();
+        Models.Bloghi304DBEntities db = new Models.Bloghi304DBEntities();
         // GET: Makaleler
         public ActionResult MakaleListesIndex()
         {

@@ -22,7 +22,7 @@ namespace _190410_BlogV1.Models
         public string MailAdres { get; set; }
         public Nullable<System.DateTime> DogumTarihi { get; set; }
         public Nullable<System.DateTime> KayitTarihi { get; set; }
-        public Nullable<bool> Yazarmi { get; set; }
+        public Nullable<bool> YazarMi { get; set; }
         public Nullable<int> YetkiID { get; set; }
     }
 }

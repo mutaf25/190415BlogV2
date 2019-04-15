@@ -13,10 +13,10 @@ namespace _190410_BlogV1.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Bloghi304DBEntities1 : DbContext
+    public partial class Bloghi304DBEntities : DbContext
     {
-        public Bloghi304DBEntities1()
-            : base("name=Bloghi304DBEntities1")
+        public Bloghi304DBEntities()
+            : base("name=Bloghi304DBEntities")
         {
         }
     
